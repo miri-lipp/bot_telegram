@@ -27,7 +27,7 @@ def main():
 	dispatcher.add_handler(error)
 	dispatcher.add_handler(MessageHandler(Filters.text, echo))
 	updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path = TOKEN)
-	updater.bot.setWebhook('https://yourherokuappname.herokuapp.com/' + TOKEN)
+	updater.bot.setWebhook('https://secure-savannah-38296.herokuapp.com/' + TOKEN)
 
 if __name__ == '__main__':
     main()
